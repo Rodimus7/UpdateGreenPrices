@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="UpdateGreenPrices.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="5" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="UpdateGreenPrices">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=updategreenprices;AccountKey=$(_updategreenprices.key_)" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="d49dec81-5e36-4245-b025-6d5865f69378" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
